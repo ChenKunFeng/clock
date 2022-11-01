@@ -11,7 +11,7 @@ const prefixHttp = 'http://';
 const prefixIp = 'wgzs.nm135.cn:';
 const prefixPort = '8080';
 export const request = {
-  prefix: '/api',
+  // prefix: '/api',
   // prefix: `${prefixHttp}${prefixIp}${prefixPort}`,
   // prefix: `${prefixHttp}${prefixIp}${prefixPort}/AppCloudInf/api/rest.json`,
 
