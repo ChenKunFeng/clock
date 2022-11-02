@@ -2493,6 +2493,7 @@ a {
 .content___3UTq0 .time___gVtOc {
   width: 100%;
   font-size: 1.8rem;
+  text-align: center;
   font-family: "PUTHIAfont";
 }
 .content___3UTq0 .weather___9EdS6 {
@@ -2535,8 +2536,9 @@ a {
   font-size: 0.4rem;
 }
 .content___3UTq0 .musicView___2HvUJ {
-  margin-top: 0.6rem;
-  padding: 0 0.16rem;
+  border-top: 1px solid grey;
+  margin: 0.4rem 0.16rem;
+  padding: 0.2rem 0;
   color: #000;
   font-size: 0.36rem;
 }

@@ -11856,63 +11856,68 @@
             { className: k.a.time },
             _()(L).format("HH:mm:ss")
           ),
-          u.a.createElement(
-            "div",
-            { className: k.a.weather },
+          "{}" !== JSON.stringify(E) &&
+            "{}" !== JSON.stringify(x) &&
             u.a.createElement(
               "div",
-              { className: k.a.city },
-              u.a.createElement("img", {
-                src: g.a,
-                className: k.a.icon,
-                alt: "",
-              }),
+              { className: k.a.weather },
               u.a.createElement(
                 "div",
-                { className: k.a.cityName },
-                (null === E || void 0 === E ? void 0 : E.adm2) +
-                  "\u5e02-" +
-                  (null === E || void 0 === E ? void 0 : E.name) +
-                  "\u533a"
-              )
-            ),
-            u.a.createElement(
-              "div",
-              { className: k.a.weatherInfo },
-              u.a.createElement("img", {
-                src: "https://icons.qweather.com/assets/icons/".concat(
+                { className: k.a.city },
+                u.a.createElement("img", {
+                  src: g.a,
+                  className: k.a.icon,
+                  alt: "",
+                }),
+                u.a.createElement(
+                  "div",
+                  { className: k.a.cityName },
+                  (null === E || void 0 === E ? void 0 : E.adm2) +
+                    "\u5e02-" +
+                    (null === E || void 0 === E ? void 0 : E.name) +
+                    "\u533a"
+                )
+              ),
+              u.a.createElement(
+                "div",
+                { className: k.a.weatherInfo },
+                u.a.createElement("img", {
+                  src: "https://icons.qweather.com/assets/icons/".concat(
+                    null === x ||
+                      void 0 === x ||
+                      null === (t = x.now) ||
+                      void 0 === t
+                      ? void 0
+                      : t.icon,
+                    ".svg"
+                  ),
+                  alt: "",
+                  className: k.a.weatherIcon,
+                }),
+                u.a.createElement(
+                  "div",
+                  { className: k.a.detail },
                   null === x ||
                     void 0 === x ||
-                    null === (t = x.now) ||
-                    void 0 === t
+                    null === (n = x.now) ||
+                    void 0 === n
                     ? void 0
-                    : t.icon,
-                  ".svg"
-                ),
-                alt: "",
-                className: k.a.weatherIcon,
-              }),
+                    : n.text
+                )
+              ),
               u.a.createElement(
                 "div",
-                { className: k.a.detail },
+                { className: k.a.temp },
+                "\u5f53\u524d\u6e29\u5ea6\uff1a",
                 null === x ||
                   void 0 === x ||
-                  null === (n = x.now) ||
-                  void 0 === n
+                  null === (i = x.now) ||
+                  void 0 === i
                   ? void 0
-                  : n.text
+                  : i.temp,
+                "\u2103"
               )
             ),
-            u.a.createElement(
-              "div",
-              { className: k.a.temp },
-              "\u5f53\u524d\u6e29\u5ea6\uff1a",
-              null === x || void 0 === x || null === (i = x.now) || void 0 === i
-                ? void 0
-                : i.temp,
-              "\u2103"
-            )
-          ),
           u.a.createElement(
             "div",
             { className: k.a.musicView },
@@ -40500,7 +40505,7 @@
         },
         credentials: "include",
       },
-      o = [{ pagePath: "/", title: "\u9996\u9875" }],
+      o = [{ pagePath: "/", title: "\u65f6\u949f" }],
       s = [],
       u = {
         navList: s,
