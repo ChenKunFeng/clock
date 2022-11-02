@@ -120,26 +120,29 @@ const HomePage: FC<HomePageProps> = (props) => {
         {moment(currentDate).format("HH:mm:ss")}
       </div>
 
-      <div className={styles.weather}>
-        <div className={styles.city}>
-          <img src={addressIcon} className={styles.icon} alt="" />
-          <div className={styles.cityName}>
-            {cityInfo?.adm2 + "市-" + cityInfo?.name + "区"}
-          </div>
-        </div>
+      {JSON.stringify(cityInfo) !== "{}" &&
+        JSON.stringify(weatherData) !== "{}" && (
+          <div className={styles.weather}>
+            <div className={styles.city}>
+              <img src={addressIcon} className={styles.icon} alt="" />
+              <div className={styles.cityName}>
+                {cityInfo?.adm2 + "市-" + cityInfo?.name + "区"}
+              </div>
+            </div>
 
-        <div className={styles.weatherInfo}>
-          <img
-            src={`https://icons.qweather.com/assets/icons/${weatherData?.now?.icon}.svg`}
-            alt=""
-            className={styles.weatherIcon}
-          />
-          <div className={styles.detail}>{weatherData?.now?.text}</div>
-        </div>
-        <div className={styles.temp}>
-          当前温度：{weatherData?.now?.temp}&#8451;
-        </div>
-      </div>
+            <div className={styles.weatherInfo}>
+              <img
+                src={`https://icons.qweather.com/assets/icons/${weatherData?.now?.icon}.svg`}
+                alt=""
+                className={styles.weatherIcon}
+              />
+              <div className={styles.detail}>{weatherData?.now?.text}</div>
+            </div>
+            <div className={styles.temp}>
+              当前温度：{weatherData?.now?.temp}&#8451;
+            </div>
+          </div>
+        )}
 
       <div className={styles.musicView}>
         <div className={styles.lyric}>{nusicInfo?.lyric}</div>

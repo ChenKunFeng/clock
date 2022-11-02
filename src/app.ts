@@ -12,7 +12,7 @@ const prefixIp = "wgzs.nm135.cn:";
 const prefixPort = "8080";
 export const request = {
   prefix: "/api",
-  // prefix: `${prefixHttp}${prefixIp}${prefixPort}`,
+  // prefix: `https://geoapi.qweather.com/`,
   // prefix: `${prefixHttp}${prefixIp}${prefixPort}/AppCloudInf/api/rest.json`,
 
   method: "post",
@@ -28,7 +28,7 @@ export const request = {
 const titleList: TitleListItem[] = [
   {
     pagePath: "/",
-    title: "首页",
+    title: "时钟",
   },
 ];
 const navList: NavBarListItem[] = [];
